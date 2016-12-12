@@ -8,3 +8,18 @@
 @import 'dividers';
 @import 'other';
 @import 'responsive';
+
+$relief-table-border: 1px solid #ccc;
+
+table.relief-table{
+	border: $relief-table-border;
+  padding: 5px;
+  tr {
+    td {
+      &:first-child{
+        font-weight: bolder;
+        max-width: 40px;
+      }
+    }
+  }
+}

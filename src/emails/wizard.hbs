@@ -1,0 +1,49 @@
+---
+layout: default.hbs
+subject: Immigration Wizard Results
+---
+<span class="preheader">Here are the types of immigration relief you may qualify for:</span>
+<div class="header">
+  <table>
+    <tr>
+      <td class="align-center">
+        <a href="http://www.mailgun.com"><img src="../src/img/email-header.png" height="50" alt="Mailgun"></a>
+      </td>
+    </tr>
+    <tr>
+			<td class="align-center">
+        <h1>Immigration Wizard</h1>
+      </td>
+		</tr>
+  </table>
+</div>
+<table class="main">
+  <tr>
+    <td class="wrapper">
+      <table>
+        <tr>
+          <td>
+            <p>Hi {firstName},</p>
+            <p>Based on your answers to the Immigration Wizard, there are the forms of immigration relief you <em>may</em> qualify for:</p>
+
+            {reliefContent}
+
+            {{> button type='primary' align='center' url='https://abogadoray.com' title='Schedule a consultation' }}
+
+
+            <p>One of our professional team members will follow up with you soon.</p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<div class="footer">
+  <table>
+    <tr>
+      <td class="align-center">
+        <p>{{> follow_ray }}</p>
+      </td>
+    </tr>
+  </table>
+</div>
