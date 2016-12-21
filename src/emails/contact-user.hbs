@@ -1,0 +1,57 @@
+---
+layout: default.hbs
+subject: Your message on Immigration Wizard
+---
+<span class="preheader">Your message on Immigration Wizard</span>
+<div class="header">
+  <table>
+    <tr>
+      <td class="align-center">
+        <a href="https://immigration-wizard.abogadoray.com"><img src="https://immigration-wizard.abogadoray.com/auth-logo.png" height="50" alt="Immigration Wizard"></a>
+      </td>
+    </tr>
+		<tr>
+			<td class="align-center">
+        <h1>Immigration Wizard</h1>
+      </td>
+		</tr>
+  </table>
+</div>
+<table class="main">
+  <tr>
+    <td class="wrapper">
+      <table>
+        <tr>
+          <td>
+            <p>Hi {firstName},</p>
+            <p>For your records, here is a transcript of your message to the Law Offices of Ray A. Ybarra Maldonado:</p>
+
+            <table class="relief-table">
+              <tr>
+                <td>Date</td>
+                <td>{date}</td>
+              </tr>
+
+              <tr>
+                <td>Message</td>
+                <td>{message}</td>
+              </tr>
+
+            </table>
+
+
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<div class="footer">
+  <table>
+    <tr>
+      <td class="align-center">
+        <p>{{> follow_ray }}</p>
+      </td>
+    </tr>
+  </table>
+</div>
